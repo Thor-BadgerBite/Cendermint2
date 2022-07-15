@@ -335,6 +335,12 @@ func getDenomList(chain string) []string {
 		dList = []string{"ucre"}
 	case "sifchain":
 		dList = []string{"urowan"}
+	case "odin":
+		dList = []string{"loki"}	
+	case "bitsong":
+		dList = []string{"ubtsg"}	
+	case "desmos":
+		dList = []string{"udsm"}	
 	default:
 		zap.L().Fatal("", zap.Bool("Success", false), zap.String("err", "denom not supported"))
 	}
