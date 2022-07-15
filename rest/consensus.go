@@ -93,12 +93,12 @@ func (rpc *RPCData) getConsensusDump() {
 	rpc.ConsensusState = cs
 	rpc.Validatorsets = vSetsResult
 
-	zap.L().Info("\t", zap.Bool("Success", true), zap.String("Consensus", "height("+rpc.ConsensusState.Result.Height+") "+"round("+strconv.FormatInt(rpc.ConsensusState.Result.Round, 10)+") "+"step("+strconv.FormatInt(rpc.ConsensusState.Result.Step, 10)+")"))
-	prevoteParsed := utils.ParseConsensusOutput(rpc.ConsensusState.Result.Votes[0].PrevotesBitArray, "\\= (.*)", 1)
-	zap.L().Info("\t", zap.Bool("Success", true), zap.String("Prevote bit array", fmt.Sprintf("%.2f", prevoteParsed)))
-	precommitParsed := utils.ParseConsensusOutput(rpc.ConsensusState.Result.Votes[0].PrecommitsBitArray, "\\= (.*)", 1)
-	zap.L().Info("\t", zap.Bool("Success", true), zap.String("Precommit bit array", fmt.Sprintf("%.2f", precommitParsed)))
-	zap.L().Info("", zap.Bool("Success", true), zap.String("# of validators from RPC", fmt.Sprint(len(rpc.Validatorsets))))
+	//zap.L().Info("\t", zap.Bool("Success", true), zap.String("Consensus", "height("+rpc.ConsensusState.Result.Height+") "+"round("+strconv.FormatInt(rpc.ConsensusState.Result.Round, 10)+") "+"step("+strconv.FormatInt(rpc.ConsensusState.Result.Step, 10)+")"))
+	//prevoteParsed := utils.ParseConsensusOutput(rpc.ConsensusState.Result.Votes[0].PrevotesBitArray, "\\= (.*)", 1)
+	//zap.L().Info("\t", zap.Bool("Success", true), zap.String("Prevote bit array", fmt.Sprintf("%.2f", prevoteParsed)))
+	//precommitParsed := utils.ParseConsensusOutput(rpc.ConsensusState.Result.Votes[0].PrecommitsBitArray, "\\= (.*)", 1)
+	//zap.L().Info("\t", zap.Bool("Success", true), zap.String("Precommit bit array", fmt.Sprintf("%.2f", precommitParsed)))
+	//zap.L().Info("", zap.Bool("Success", true), zap.String("# of validators from RPC", fmt.Sprint(len(rpc.Validatorsets))))
 }
 
 func (rpc *RPCData) getConspubMonikerMap() map[string]string {
