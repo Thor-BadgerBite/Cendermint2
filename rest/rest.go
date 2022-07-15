@@ -58,7 +58,7 @@ func (rpc RPCData) new() *RPCData {
 func GetData(chain string, blockHeight int64, blockData Blocks, denom string) *RESTData {
 	// rpc
 	var rpcData RPCData
-	rpc := rpcData.new()
+	//rpc := rpcData.new()
 
 	// REST
 	var restData RESTData
