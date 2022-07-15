@@ -31,7 +31,7 @@ func GetPrefix(chain string) string {
 	case "evmos":
 		return "evmos"
 	case "bitsong":
-		return "evmos"
+		return "bitsong"
 	case "odin":
 		return "odin"
 	case "desmos":
