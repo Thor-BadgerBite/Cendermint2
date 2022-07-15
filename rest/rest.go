@@ -68,7 +68,7 @@ func GetData(chain string, blockHeight int64, blockData Blocks, denom string) *R
 	wg := sync.WaitGroup{}
 	wg.Add(1)
 	go func() {
-		rpc.getConsensusDump()
+		//rpc.getConsensusDump()
 		rd.getStakingPool(denom)
 		rd.getSlashingParams()
 		rd.getInflation(chain, denom)
