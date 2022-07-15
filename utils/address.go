@@ -30,6 +30,12 @@ func GetPrefix(chain string) string {
 		return "micro"
 	case "evmos":
 		return "evmos"
+	case "bitsong":
+		return "evmos"
+	case "odin":
+		return "odin"
+	case "desmos":
+		return "desmos"
 	default:
 		return "cosmos"
 	}
