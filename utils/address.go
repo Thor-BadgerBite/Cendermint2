@@ -13,7 +13,7 @@ import (
 func GetPrefix(chain string) string {
 	switch chain {
 	case "cosmos":
-		return "cosmos"
+		return "odin"
 	case "umee":
 		return "umee"
 	case "nym":
