@@ -340,7 +340,9 @@ func getDenomList(chain string) []string {
 	case "bitsong":
 		dList = []string{"ubtsg"}	
 	case "desmos":
-		dList = []string{"udsm"}	
+		dList = []string{"udsm"}
+	case "paloma":
+		dList = []string{"ugrain"}
 	default:
 		zap.L().Fatal("", zap.Bool("Success", false), zap.String("err", "denom not supported"))
 	}
