@@ -55,8 +55,8 @@ This project started out as a fork of [Cosmos-IE](https://github.com/node-a-team
 
 ```bash
 $ cd $GOPATH/src/githb.com
-$ git clone https://github.com/jim380/Cendermint.git
-$ cd $HOME/Cendermint
+$ git clone https://github.com/Thor-BadgerBite/Cendermint2.git
+$ cd $HOME/Cendermint2
 $ go build
 # Important!!! Remember to fill out config.env
 $ ./Cendermint run
